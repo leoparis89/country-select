@@ -5,7 +5,7 @@ import * as React from "react";
 import * as CountryAPI from "./CountryAPI.bs.mjs";
 import * as Belt_Option from "rescript/lib/es6/belt_Option.js";
 import * as Core__Promise from "@rescript/core/src/Core__Promise.bs.mjs";
-import * as CountrySelect from "./countrySelector/CountrySelect.bs.mjs";
+import * as CountrySelect from "./countrySelect/CountrySelect.bs.mjs";
 import * as JsxRuntime from "react/jsx-runtime";
 
 function App(props) {
