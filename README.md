@@ -1,11 +1,6 @@
 # ReScript / Vite Starter Template
 
-This is a Vite-based template with following setup:
-
-- [ReScript](https://rescript-lang.org) 10.1 with @rescript/react and JSX 4 automatic mode
-- ES6 modules (ReScript code compiled to `.bs.mjs` files)
-- Vite 4 with React Plugin (Fast Refresh)
-- Tailwind 3
+CountrySelect component [demo](https://leoparis89.github.io/country-select/)
 
 ## Development
 
