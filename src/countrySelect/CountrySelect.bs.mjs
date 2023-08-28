@@ -135,14 +135,22 @@ var placeholder = JsxRuntime.jsx("span", {
       }
     });
 
+function roundOneDecimal(n) {
+  return Math.round(n * 10) / 10;
+}
+
 function CountrySelect$OptionDisplay(props) {
+  var option = props.option;
+  var labelLength = option.label.length;
+  var mockStat = labelLength * 10 + labelLength * 0.2;
+  var stat = String(roundOneDecimal(mockStat)) + "K";
   return JsxRuntime.jsxs("div", {
               children: [
                 JsxRuntime.jsx(CountrySelect$FlagAndName, {
-                      option: props.option
+                      option: option
                     }),
                 JsxRuntime.jsx("span", {
-                      children: "230.2K",
+                      children: stat,
                       style: {
                         color: Theme.colors.text.secondary,
                         fontSize: "14px"
@@ -157,6 +165,7 @@ function CountrySelect$OptionDisplay(props) {
 }
 
 var OptionDisplay = {
+  roundOneDecimal: roundOneDecimal,
   make: CountrySelect$OptionDisplay
 };
 

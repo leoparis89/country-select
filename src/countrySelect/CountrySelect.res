@@ -89,8 +89,15 @@ let placeholder =
   <span style={{color: Theme.colors["text"]["placeholder"]}}> {React.string("Search")} </span>
 
 module OptionDisplay = {
+  let roundOneDecimal = (n: float) => Js.Math.round(n *. 10.) /. 10.
+
   @react.component
-  let make = (~option) => {
+  let make = (~option: ReactSelect.selectOption) => {
+    let labelLength = option.label->String.length->Belt.Float.fromInt
+    // Create a mock stat value against the string length
+    let mockStat = labelLength *. 10. +. labelLength *. 0.2
+    let stat = mockStat->roundOneDecimal->Belt.Float.toString ++ "K"
+
     <div
       style={{
         display: "flex",
@@ -98,7 +105,7 @@ module OptionDisplay = {
       }}>
       <FlagAndName option />
       <span style={{fontSize: "14px", color: Theme.colors["text"]["secondary"]}}>
-        {React.string("230.2K")}
+        {React.string(stat)}
       </span>
     </div>
   }
