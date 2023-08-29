@@ -1,3 +1,5 @@
+// :active pseudo class is not supported in JsxDOM.style
+// so it's styling is done with css
 %%raw("import './styles.css'")
 
 let reactSelectStyles: ReactSelect.selectStyles = {
