@@ -5,7 +5,7 @@ var colors = {
   text: {
     primary: "#333333",
     secondary: "#00000085",
-    placeholder: "#00000052"
+    tertiary: "#00000052"
   }
 };
 

@@ -88,7 +88,7 @@ module Target = {
 }
 
 let placeholder =
-  <span style={{color: Theme.colors["text"]["placeholder"]}}> {React.string("Search")} </span>
+  <span style={{color: Theme.colors["text"]["tertiary"]}}> {React.string("Search")} </span>
 
 module OptionDisplay = {
   let roundOneDecimal = (n: float) => Js.Math.round(n *. 10.) /. 10.

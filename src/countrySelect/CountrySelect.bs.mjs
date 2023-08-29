@@ -131,7 +131,7 @@ var Target = {
 var placeholder = JsxRuntime.jsx("span", {
       children: "Search",
       style: {
-        color: Theme.colors.text.placeholder
+        color: Theme.colors.text.tertiary
       }
     });
 
