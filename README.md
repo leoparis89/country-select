@@ -1,4 +1,4 @@
-# ReScript / Vite Starter Template
+# CountrySelect
 
 CountrySelect component [demo](https://leoparis89.github.io/country-select/)
 
